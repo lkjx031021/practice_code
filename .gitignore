@@ -1,0 +1,39 @@
+# Ignore data files
+*.csv
+*.json
+*.txt
+*.dev
+*.test
+*.train
+*.tsv
+*.xlsx
+*.xls
+
+# Ignore model weights and checkpoints
+*.bin
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.safetensors
+*.ckpt
+*.pkl
+*.pickle
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.temp
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
