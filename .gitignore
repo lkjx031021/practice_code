@@ -19,8 +19,6 @@
 *.ckpt
 *.pkl
 *.pickle
-*checkpoints*
-*msgpack
 
 # Ignore logs and temporary files
 *.log
