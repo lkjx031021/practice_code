@@ -34,6 +34,7 @@ __pycache__/
 .idea/
 *.swp
 *.swo
+*.out
 
 # Ignore OS files
 .DS_Store
@@ -48,3 +49,12 @@ wheels/
 
 # Virtual environments
 .venv
+
+# C/C++ compiled files
+*.o
+*.a
+*.so
+*.so.*
+*.exe
+*.dll
+*.dylib
