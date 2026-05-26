@@ -30,14 +30,23 @@ int main(){
 
     int arr1[5] = {1,2,3,4,5};
     int arr2[5] = {6,7,8,9,10};
+    int a = 10;
     int arr3[5] = {111,112,113,114,115};
 
     int* arr_2d[3] = {arr1, arr2, arr3}; 
-    int** ip2 = arr_2d;
+    int** ip2 = arr_2d;// 二级指针
+    std::cout << "一维数组地址：" << arr1 << " " << arr2 << " " << arr3 << std::endl; // 一维数组地址：0x7fff7b2040b0 0x7fff7b2040c4 0x7fff7b2040d8
+    std::cout << "二级指针地址：" ;
+    for (int i=0; i < 3; i++){
+        std::cout << *(ip2 + i) << " " ;
+    }
+    std::cout << std::endl;
+    std::cout << "ip2步长: " << ip2 << " " << ip2 + 1 << std::endl; // ip2 存放了 arr_2d 中第一个元素的地址，即 arr1 的地址，ip2 + 1 存放了 arr_2d 中第二个元素的地址，即 arr2 的地址
 
     for (int i=0; i < 3; i++){
         for (int j=0; j< 5; j++){
-            std::cout << *(arr_2d[i] + j)  << " ";
+            std::cout << *(arr_2d[i] + j)  << " "; // 
+            std::cout << arr_2d[i] + j << std::endl;
         }
         std::cout << std::endl;
         for (int j=0; j < 5; j++){
@@ -48,6 +57,7 @@ int main(){
         // }
         std::cout << std::endl;
         std::cout << std::endl;
+        std::cout << "ip2: " << ip2 << std::endl;
         ip2++;
     }
 
